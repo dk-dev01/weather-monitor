@@ -1,6 +1,9 @@
 import requests #chamada da api
+import os #para pegar a chave da api do arquivo .env
+from dotenv import load_dotenv
 
-chaveapi = '25bff31627fc1cd7a6763af378a1d194' #chave de acesso da api
+load_dotenv()  #carrega as variaveis de ambiente do arquivo .env
+chaveapi = os.getenv('chave')  #chave de acesso da api
 
 
 def buscarClima(cidade):
