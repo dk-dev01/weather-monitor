@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento Metereológico</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<body>
+    <h1 style="text-align:center">MONITORAMENTO METEREOLÓGICO</h1>
+    <br>
+    <forms>
+        <fieldset>
+            <legend><h2>INFORME SEU CIDADE</h2></legend>
+            PESQUISA
+            <br>
+            <input placeholder="digite sua cidade..." type="text" id="cidade">
+            <br><br>
+            <button onclick="buscarTemperatura()">BUSCAR</button>
+            <br><br>
+            <div id="temperatura"></div>
+        </fieldset>
+        <div class="grafico-box">
+            <canvas id="graficoTemperatura"></canvas>
+        </div>
+    </forms>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Importa a biblioteca Chart.js para gráficos -->
+</body>
+</html>

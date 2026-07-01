@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #050b16;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* Fundo com grade */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 180, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 180, 255, 0.04) 1px, transparent 1px);
+    background-size: 45px 45px;
+    z-index: -1;
+}
+
+strong {
+    color: red;
+}
+/* Título */
+h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px rgba(0, 200, 255, 0.35);
+}
+
+/* Formulário */
+form {
+    width: 100%;
+    max-width: 420px;
+}
+
+fieldset {
+    border: 1px solid rgba(0, 200, 255, 0.22);
+    border-radius: 18px;
+    padding: 28px;
+    background: rgba(8, 18, 35, 0.92);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+legend {
+    text-align: center;
+    padding: 0 12px;
+}
+
+legend h2 {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #6f87a8;
+}
+
+label,
+fieldset {
+    color: #e8f3ff;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    padding: 0 15px;
+    background: #07101f;
+    color: white;
+    border: 1px solid #183454;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #00c8ff;
+    box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.12);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0077ff, #00c8ff);
+    color: #03101c;
+    font-weight: bold;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 200, 255, 0.25);
+}
+
+/* CARD CLIMA */
+
+.card-clima {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cidade {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* LINHA PRINCIPAL */
+
+.linha-temperatura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.info {
+    flex: 1;
+    text-align: center;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(0,200,255,0.15);
+    border-radius: 14px;
+    padding: 18px 10px;
+}
+
+.principal {
+    transform: scale(1.08);
+    background: linear-gradient(
+        180deg,
+        rgba(0,200,255,0.08),
+        rgba(0,119,255,0.08)
+    );
+}
+
+.principal h1 {
+    font-size: 42px;
+    color: #00c8ff;
+}
+
+/* TITULOS */
+
+.titulo-info {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #7ea0c4;
+    margin-bottom: 10px;
+}
+
+/* LINHA EXTRA */
+
+.linha-extra {
+    display: flex;
+    gap: 15px;
+}
+
+.extra {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(0,200,255,0.12);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.extra span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #7ea0c4;
+    margin-bottom: 8px;
+}
+
+.extra h3 {
+    margin: 0;
+}
+
+/* msg */
+
+.mensagem {
+    text-align: center;
+    padding: 12px;
+    border-radius: 999px;
+    background: rgba(0,200,255,0.08);
+    color: #4fc3f7;
+    font-weight: bold;
+}
+ /* grafico */
+.grafico-box {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+}

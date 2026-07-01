@@ -1,0 +1,14 @@
+php-crud-store | A8 e A10
+
+php-loja-selecao | A9
+
+@Feito
+php-biblioteca-tech | A6
+
+@Feito
+php loja-herois | 
+	versao-1-inicio: inicio de tudo, com apenas capa sem css,
+	versao-2: apenas um formulário e os dados enviados, 
+	versao-3 capa, um formulario divido por tipo/pagina e od dados enviado, 
+	versao-4-final: capa personalizada, fomrulario personalizado e dividido com dados enviado personalizado 
+	versao-5-final+database: tudo conectado com banco de dados do xampp
